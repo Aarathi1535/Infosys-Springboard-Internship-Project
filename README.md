@@ -8,4 +8,4 @@ Technologies:
 5. SQLite3
 6. Tkinter
 
-![Dataflow][/dataflow.png]
+![Dataflow](dataflow.png)
