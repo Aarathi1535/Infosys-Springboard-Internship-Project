@@ -1,43 +1,60 @@
-# 🏦 Automating Bank Check Extraction from Scanned PDFs
+# 🏦 Automating Bank Cheque Extraction from Scanned PDFs
 
-This project, **"Automatic Cheque Extraction from Scanned Document"**, streamlines the process of digitizing and extracting essential information from bank cheques provided in PDF format. The system converts scanned PDF cheques into images, preprocesses them to remove noise using OpenCV, and uses Tesseract OCR to extract text details. Extracted information is then stored in an SQLite3 database for easy access and further use.
-
-> 📌 Developed to eliminate manual entry errors and reduce processing time in financial document digitization.
+This project was developed as part of my **Python Developer Internship at Infosys Springboard**, where I focused on building intelligent automation tools using OCR and image processing. Titled **“Automatic Cheque Extraction from Scanned Document”**, this project aims to streamline the manual effort of extracting financial data from scanned bank cheques, using a combination of PDF processing, computer vision, and text recognition.
 
 ---
 
-## 🔍 Key Features
+## 🎯 Project Objective
 
-✅ Convert scanned cheque PDFs into images  
-✅ Preprocess images to enhance clarity and remove noise  
-✅ Extract important textual information using OCR  
-✅ Store extracted data in a local database (SQLite3)  
-✅ Interactive GUI built using Tkinter for ease of use  
+To build a Python-based application that accepts scanned PDF cheques, extracts textual information such as account numbers, IFSC codes, and cheque amounts using OCR, and stores them securely in a local database for efficient retrieval and processing.
 
 ---
 
-## 💻 Technologies Used
+## 💡 Key Highlights
 
-- **Python** – Core language  
-- **pdf2image** – Convert PDF to image  
-- **OpenCV** – Image preprocessing  
-- **Pytesseract** – Optical Character Recognition  
-- **SQLite3** – Lightweight local database  
-- **Tkinter** – GUI development
+- 🔄 **PDF to Image Conversion** – Convert scanned PDFs into images for processing  
+- 🧹 **Image Preprocessing with OpenCV** – Denoising and thresholding for OCR accuracy  
+- 🔎 **Text Extraction with Tesseract OCR** – Extract key cheque details like account number, date, and amount  
+- 🗃️ **Data Storage using SQLite3** – Securely store extracted text for reporting and integration  
+- 🖥️ **GUI with Tkinter** – Simple, interactive interface for non-technical users
 
 ---
 
-## 🔁 Workflow Overview
+## 🛠️ Tech Stack
+
+| Technology | Purpose                         |
+|------------|----------------------------------|
+| Python     | Core programming language        |
+| pdf2image  | Convert PDFs into image format   |
+| OpenCV     | Image enhancement and filtering  |
+| Pytesseract| Optical Character Recognition    |
+| SQLite3    | Local database for data storage  |
+| Tkinter    | GUI for user interaction         |
+
+---
+
+## 📌 Application Flow
+
+1. User uploads a scanned cheque in PDF format  
+2. PDF is converted into image format  
+3. Image is preprocessed to remove noise and improve OCR quality  
+4. Pytesseract extracts key textual information  
+5. Extracted data is stored in SQLite3  
+6. The GUI displays results and confirms successful processing
+
+---
+
+## 🔁 Workflow Diagram
 
 ![Dataflow](dataflow.png)
 
 ---
-## 🧠 Use Case
 
-This tool can be effectively deployed in banking sectors, accounting offices, or fintech platforms for:
-- Automated cheque digitization
-- Bulk document processing
-- Financial data archiving
-- Fraud detection systems (with extended modules)
+## 🧠 Real-World Applications
+
+- Automated cheque data entry in banks
+- Bulk document digitization in accounting firms
+- Preprocessing stage for fraud detection systems
+- Financial records automation in ERP solutions
 
 ---
